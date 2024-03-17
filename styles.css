@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --clr-green: 197, 248, 42;
+  --clr-white: 255, 255, 255;
+  --clr-grey: 51, 51, 51;
+  --clr-dark-grey: 31, 31, 31;
+  --clr-off-black: 20, 20, 20;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.img {
+  height: 5rem;
+  width: 5rem;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: rgb(var(--clr-off-black));
+  color: rgb(var(--clr-white));
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgb(var(--clr-dark-grey));
+  padding: 2rem;
+  width: 90%;
+  max-width: 375px;
+  margin-inline: auto;
+  border-radius: 1rem;
+}
+
+h1 {
+  font-size: larger;
+}
+
+h2 {
+  font-size: x-small;
+  color: rgb(var(--clr-green));
+}
+
+q {
+  font-size: small;
+  margin-top: 1rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.btn {
+  color: rgb(var(--clr-white));
+  width: 100%;
+  font-weight: 700;
+  background-color: rgb(var(--clr-grey));
+  padding: 0.7rem 0;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: rgb(var(--clr-green));
+  color: rgb(var(--clr-grey));
+  cursor: pointer;
+}
